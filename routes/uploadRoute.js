@@ -4,12 +4,16 @@ const router = express.Router();
 const upload = require("../utils/upload");
 const { addEmployeesFromExcel } = require("../controllers/uploadController");
 const { assignDuties } = require("../controllers/assignDutyController");
-const { generateFacultyDutyReport } = require("../controllers/dutyFrequency");
+const { generateFacultyDutyReport, generateFacultyDutyFrequency } = require("../controllers/dutyReport");
+const { updateSettings, getSettings } = require("../controllers/updateSettings");
 
 // Example controller
 router.post("/upload/add_employee", upload.single("excelFile"), addEmployeesFromExcel);
 router.post("/duty/assign_duty", assignDuties);
-router.post("/duty/report", generateFacultyDutyReport);
+router.post("/duty/frequency", generateFacultyDutyFrequency);
+router.get("/duty/report/:empCode", generateFacultyDutyReport);
+router.put("/settings", updateSettings);
+router.get("/settings", getSettings);
 
 
 // router.post("/upload/delete_employee", upload.single("excelFile"), (req, res) => {

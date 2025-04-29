@@ -2,7 +2,7 @@ const Faculty = require('../models/faculty');
 const XLSX = require('xlsx');
 const moment = require('moment');
 
-const generateFacultyDutyReport = async (req, res) => {
+const generateFacultyDutyFrequency = async (req, res) => {
     try {
         const { year } = req.body;
 
@@ -17,9 +17,9 @@ const generateFacultyDutyReport = async (req, res) => {
 
         // Header row
         const header = [
-            'Faculty Name', 
-            'Faculty ID', 
-            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+            'Faculty Name',
+            'Faculty ID',
+            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
             'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
         ];
         data.push(header);
@@ -66,4 +66,24 @@ const generateFacultyDutyReport = async (req, res) => {
     }
 };
 
-module.exports = { generateFacultyDutyReport };
+const generateFacultyDutyReport = async (req, res) => {
+    try {
+        const { empCode } = req.params;
+        
+
+        if (!empCode) {
+            return res.status(400).json({ message: 'Employee code is required' });
+        }
+
+        const faculty = await Faculty.findOne({ empCode }).lean();
+        if (!faculty) {
+            return res.status(404).json({ message: 'Faculty not found' });
+        }
+        return res.status(200).json({ message: 'Faculty found', faculty });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error', error: error.message });
+    }
+}
+module.exports = { generateFacultyDutyFrequency, generateFacultyDutyReport };
