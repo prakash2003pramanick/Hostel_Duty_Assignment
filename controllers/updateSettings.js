@@ -1,11 +1,13 @@
-const Setting = require('../models/setthings');
+const Setting = require('../models/settings');
 
 const updateSettings = async (req, res) => {
     try {
-        const { boysHostel, girlsHostel } = req.body;
+        let { boysHostel, girlsHostel } = req.body;
 
-        if (typeof boysHostel !== 'number' || typeof girlsHostel !== 'number') {
-            return res.status(400).json({ message: 'Invalid input data' });
+        boysHostel = parseInt(boysHostel);
+        girlsHostel = parseInt(girlsHostel);
+        if (isNaN(boysHostel) || isNaN(girlsHostel)) {
+            return res.status(400).json({ message: 'Invalid input' });
         }
         const settings = await Setting.findOne();
         if (!settings) {

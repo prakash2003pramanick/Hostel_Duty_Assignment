@@ -1,13 +1,13 @@
 const Faculty = require('../models/faculty');
 const moment = require('moment');
 const generateDutySheetExcel = require('../utils/convertDutyObjectToExcel');
+const Setting = require('../models/settings');
 
 const assignDuties = async (req, res) => {
     try {
         console.log("Assigning duties...");
-        const { hostels, startDate, endDate, hostelType } = req.body;
+        const { startDate, endDate, hostelType } = req.body;
 
-        const gender = (hostelType === "BOY'S") ? "MALE" : "FEMALE";
 
         const start = moment(startDate).startOf('day');
         const end = moment(endDate).startOf('day');
@@ -15,6 +15,31 @@ const assignDuties = async (req, res) => {
         if (!start.isValid() || !end.isValid() || start.isAfter(end)) {
             return res.status(400).json({ message: 'Invalid date range' });
         }
+
+        // get settings 
+        const settings = await Setting.findOne();
+        let boysHostel = 12, girlsHostel = 5;
+        if (settings) {
+            boysHostel = settings.boysHostel;
+            girlsHostel = settings.girlsHostel;
+        }
+
+        const hostels = [];
+        let gender = 'FEMALE';
+        if (hostelType === "BOY'S") {
+            for (let i = 1; i <= boysHostel; i++) {
+                hostels.push(`Group ${i}`);
+            }
+            gender = 'MALE';
+        }
+        else if (hostelType === "GIRL'S") {
+            for (let i = 1; i <= girlsHostel; i++) {
+                hostels.push(`Group ${i}`);
+            }
+        }
+
+        // console.log("Gender", gender);
+        // console.log("Hostels", hostels);
 
         const totalDays = end.diff(start, 'days') + 1;
         const dutyAssignments = [];
