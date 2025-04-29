@@ -1,0 +1,645 @@
+{
+    "message": "Duties assigned successfully",
+    "dutyAssignments": [
+        {
+            "hostelName": "Hostel 1",
+            "duties": [
+                {
+                    "date": "2025-05-01",
+                    "teachingFaculty": "Sarbeswar  Mohanty (Coordinator)",
+                    "nonTeachingFaculty": "Manas Kumar Mishra"
+                },
+                {
+                    "date": "2025-05-02",
+                    "teachingFaculty": "Himanshu  Agarwall (Coordinator)",
+                    "nonTeachingFaculty": "Ashok Kumar Dash"
+                },
+                {
+                    "date": "2025-05-03",
+                    "teachingFaculty": "Subrat  Behera (Coordinator)",
+                    "nonTeachingFaculty": "Sanjaya Kumar Nayak"
+                },
+                {
+                    "date": "2025-05-04",
+                    "teachingFaculty": "Dambarudhar  Mohanty (Coordinator)",
+                    "nonTeachingFaculty": "Chandra Bhanu Nayak"
+                },
+                {
+                    "date": "2025-05-05",
+                    "teachingFaculty": "Pramod Kumar Sethy (Coordinator)",
+                    "nonTeachingFaculty": "Chandrasekhar  Panda"
+                },
+                {
+                    "date": "2025-05-06",
+                    "teachingFaculty": "Abhijit  Sutradhar (Coordinator)",
+                    "nonTeachingFaculty": "Bishnu Prasad Mishra"
+                },
+                {
+                    "date": "2025-05-07",
+                    "teachingFaculty": "Mahendra Kumar Gourisaria (Coordinator)",
+                    "nonTeachingFaculty": "Bhabani Sankar Mishra"
+                },
+                {
+                    "date": "2025-05-08",
+                    "teachingFaculty": "Ashutosh  Sarangi (Coordinator)",
+                    "nonTeachingFaculty": "B. Pradeepta Kumar Patro"
+                },
+                {
+                    "date": "2025-05-09",
+                    "teachingFaculty": "Lalita Mohan Lenka  (Coordinator)",
+                    "nonTeachingFaculty": "Sankar  Gouda"
+                },
+                {
+                    "date": "2025-05-10",
+                    "teachingFaculty": "Prasant Kumar Patra (Coordinator)",
+                    "nonTeachingFaculty": "Manoranjan  Panda"
+                },
+                {
+                    "date": "2025-05-11",
+                    "teachingFaculty": "Dayal Kumar Behera (Coordinator)",
+                    "nonTeachingFaculty": "Sibananda  Sahoo"
+                },
+                {
+                    "date": "2025-05-12",
+                    "teachingFaculty": "Sovan  Saha (Coordinator)",
+                    "nonTeachingFaculty": "Satyaranjan  Pattnaik"
+                },
+                {
+                    "date": "2025-05-13",
+                    "teachingFaculty": "Jayant Kumar Rout (Coordinator)",
+                    "nonTeachingFaculty": "Subash Chandra Sethi"
+                },
+                {
+                    "date": "2025-05-14",
+                    "teachingFaculty": "Suman  Mandal (Coordinator)",
+                    "nonTeachingFaculty": "Deepak Kumar Jena"
+                },
+                {
+                    "date": "2025-05-15",
+                    "teachingFaculty": "Sanjib Kumar Behera (Coordinator)",
+                    "nonTeachingFaculty": "Jnana Ranjan Nayak"
+                },
+                {
+                    "date": "2025-05-16",
+                    "teachingFaculty": "Pushkar  Kishore (Coordinator)",
+                    "nonTeachingFaculty": "Niranjan  Senapaty"
+                },
+                {
+                    "date": "2025-05-17",
+                    "teachingFaculty": "Niranjan  Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Keshaba Chandra Mohanta"
+                },
+                {
+                    "date": "2025-05-18",
+                    "teachingFaculty": "Malaya  Mohanty (Coordinator)",
+                    "nonTeachingFaculty": "Gyana Ranjan Khatua"
+                },
+                {
+                    "date": "2025-05-19",
+                    "teachingFaculty": "Niten Kumar Panda (Coordinator)",
+                    "nonTeachingFaculty": "Ambika Charan Pattnaik"
+                },
+                {
+                    "date": "2025-05-20",
+                    "teachingFaculty": "Sankalp  Nayak (Coordinator)",
+                    "nonTeachingFaculty": "Sashikanta  Sahoo"
+                },
+                {
+                    "date": "2025-05-21",
+                    "teachingFaculty": "Sourav Kumar Giri (Coordinator)",
+                    "nonTeachingFaculty": "Akshaya Ku. Barik"
+                },
+                {
+                    "date": "2025-05-22",
+                    "teachingFaculty": "Deepak Kumar Raut (Coordinator)",
+                    "nonTeachingFaculty": "Sarbeswar  Mishra"
+                },
+                {
+                    "date": "2025-05-23",
+                    "teachingFaculty": "Satyananda Champati Rai (Coordinator)",
+                    "nonTeachingFaculty": "Aswini Kumar Sahoo"
+                },
+                {
+                    "date": "2025-05-24",
+                    "teachingFaculty": "Sumanta  Chaudhuri (Coordinator)",
+                    "nonTeachingFaculty": "Kumar  Sahoo"
+                },
+                {
+                    "date": "2025-05-25",
+                    "teachingFaculty": "Rabindra Kumar Barik (Coordinator)",
+                    "nonTeachingFaculty": "Paresh Ch. Tripathy"
+                },
+                {
+                    "date": "2025-05-26",
+                    "teachingFaculty": "Hitesh  Mohapatra (Coordinator)",
+                    "nonTeachingFaculty": "Prabin Kumar Nayak"
+                },
+                {
+                    "date": "2025-05-27",
+                    "teachingFaculty": "Nibedan  Panda (Coordinator)",
+                    "nonTeachingFaculty": "Srikrishna Prasad Mishra"
+                },
+                {
+                    "date": "2025-05-28",
+                    "teachingFaculty": "Sidharth  Harichandan (Coordinator)",
+                    "nonTeachingFaculty": "Sriyam  Pattanaik"
+                },
+                {
+                    "date": "2025-05-29",
+                    "teachingFaculty": "Rishitosh  Ranjan (Coordinator)",
+                    "nonTeachingFaculty": "Ashok Kumar Kunda"
+                },
+                {
+                    "date": "2025-05-30",
+                    "teachingFaculty": "Satya Ranjan Dash (Coordinator)",
+                    "nonTeachingFaculty": "Akhil Kumar Pradhan"
+                },
+                {
+                    "date": "2025-05-31",
+                    "teachingFaculty": "Abhiram  Pradhan (Coordinator)",
+                    "nonTeachingFaculty": "Sumit  Bakshi"
+                }
+            ]
+        },
+        {
+            "hostelName": "Hostel 2",
+            "duties": [
+                {
+                    "date": "2025-05-01",
+                    "teachingFaculty": "Piyusa Pritiparnna Das (Coordinator)",
+                    "nonTeachingFaculty": "Sudam  Barik"
+                },
+                {
+                    "date": "2025-05-02",
+                    "teachingFaculty": "Sumit  Dass (Coordinator)",
+                    "nonTeachingFaculty": "Hemanta Kumar Nayak"
+                },
+                {
+                    "date": "2025-05-03",
+                    "teachingFaculty": "Satyendra Kumar Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Mirza Md. Ainul Haque"
+                },
+                {
+                    "date": "2025-05-04",
+                    "teachingFaculty": "Tanmoy  Putatunda (Coordinator)",
+                    "nonTeachingFaculty": "Krushna Prasad Mishra"
+                },
+                {
+                    "date": "2025-05-05",
+                    "teachingFaculty": "Jiban Kumar Jena (Coordinator)",
+                    "nonTeachingFaculty": "Sarwagya  ."
+                },
+                {
+                    "date": "2025-05-06",
+                    "teachingFaculty": "Manas  Mukul (Coordinator)",
+                    "nonTeachingFaculty": "Ambika Prasad  Praharaj"
+                },
+                {
+                    "date": "2025-05-07",
+                    "teachingFaculty": "Sunil Kumar Gouda (Coordinator)",
+                    "nonTeachingFaculty": "Pravat Kumar Beura"
+                },
+                {
+                    "date": "2025-05-08",
+                    "teachingFaculty": "Jyoti Prakash Meher (Coordinator)",
+                    "nonTeachingFaculty": "Aswini Kumar Jena"
+                },
+                {
+                    "date": "2025-05-09",
+                    "teachingFaculty": "Amalendu Kumar Pradhan (Coordinator)",
+                    "nonTeachingFaculty": "Sidheswar  Behera"
+                },
+                {
+                    "date": "2025-05-10",
+                    "teachingFaculty": "Partha Sarathi Pattnayak (Coordinator)",
+                    "nonTeachingFaculty": "Sridhar  Pradhan"
+                },
+                {
+                    "date": "2025-05-11",
+                    "teachingFaculty": "Lalatendu  Biswal (Coordinator)",
+                    "nonTeachingFaculty": "Rasmi Ranjan Swain"
+                },
+                {
+                    "date": "2025-05-12",
+                    "teachingFaculty": "Dindyal  Mandal (Coordinator)",
+                    "nonTeachingFaculty": "Niranjan  Sahoo"
+                },
+                {
+                    "date": "2025-05-13",
+                    "teachingFaculty": "Sohail  Khan (Coordinator)",
+                    "nonTeachingFaculty": "Jitendra  Send"
+                },
+                {
+                    "date": "2025-05-14",
+                    "teachingFaculty": "Manoj Kumar Behera (Coordinator)",
+                    "nonTeachingFaculty": "Kirtiman  Routaray"
+                },
+                {
+                    "date": "2025-05-15",
+                    "teachingFaculty": "Abhaya Kumar Behera (Coordinator)",
+                    "nonTeachingFaculty": "Smruti Ranjan Naik"
+                },
+                {
+                    "date": "2025-05-16",
+                    "teachingFaculty": "Arun Kumar Gochhayat (Coordinator)",
+                    "nonTeachingFaculty": "Kshitish Chandra Barik"
+                },
+                {
+                    "date": "2025-05-17",
+                    "teachingFaculty": "Subir Kumar Maity (Coordinator)",
+                    "nonTeachingFaculty": "Chittaranjan  Sahoo"
+                },
+                {
+                    "date": "2025-05-18",
+                    "teachingFaculty": "Amit Kumar Das (Coordinator)",
+                    "nonTeachingFaculty": "Priyaranjan  Panda"
+                },
+                {
+                    "date": "2025-05-19",
+                    "teachingFaculty": "Abir  Sen (Coordinator)",
+                    "nonTeachingFaculty": "Manas Ranjan Swain"
+                },
+                {
+                    "date": "2025-05-20",
+                    "teachingFaculty": "Ajay  Anand (Coordinator)",
+                    "nonTeachingFaculty": "Ranjan Kumar Barik"
+                },
+                {
+                    "date": "2025-05-21",
+                    "teachingFaculty": "Vishal  Pradhan (Coordinator)",
+                    "nonTeachingFaculty": "Sunil Kumar Sahoo"
+                },
+                {
+                    "date": "2025-05-22",
+                    "teachingFaculty": "Tushar Ranjan Patnaik (Coordinator)",
+                    "nonTeachingFaculty": "Harekrushna  Paikaray"
+                },
+                {
+                    "date": "2025-05-23",
+                    "teachingFaculty": "Sovan Kumar Sahoo (Coordinator)",
+                    "nonTeachingFaculty": "Adarsha  Mishra"
+                },
+                {
+                    "date": "2025-05-24",
+                    "teachingFaculty": "Kirtikanta  Sahoo (Coordinator)",
+                    "nonTeachingFaculty": "Gagan Bihari Dash"
+                },
+                {
+                    "date": "2025-05-25",
+                    "teachingFaculty": "Jaydeep  Das (Coordinator)",
+                    "nonTeachingFaculty": "Manoranjan  Mohapatra"
+                },
+                {
+                    "date": "2025-05-26",
+                    "teachingFaculty": "Murari  Mandal (Coordinator)",
+                    "nonTeachingFaculty": "Subrat Kumar Mohapatra"
+                },
+                {
+                    "date": "2025-05-27",
+                    "teachingFaculty": "Ajit Kumar Pasayat (Coordinator)",
+                    "nonTeachingFaculty": "Sanjaya Kumar Mahatab"
+                },
+                {
+                    "date": "2025-05-28",
+                    "teachingFaculty": "Ambika Prasad Ray (Coordinator)",
+                    "nonTeachingFaculty": "Soumya Kanta Nayak"
+                },
+                {
+                    "date": "2025-05-29",
+                    "teachingFaculty": "Puranjoy  Ghosh (Coordinator)",
+                    "nonTeachingFaculty": "Chitta Ranjan Parida"
+                },
+                {
+                    "date": "2025-05-30",
+                    "teachingFaculty": "Subhasis  Dash  (Coordinator)",
+                    "nonTeachingFaculty": "Jyoti Ranjan Das"
+                },
+                {
+                    "date": "2025-05-31",
+                    "teachingFaculty": "Nageswara Rao Budipi (Coordinator)",
+                    "nonTeachingFaculty": "Rajit Kumar Ray"
+                }
+            ]
+        },
+        {
+            "hostelName": "Hostel 3",
+            "duties": [
+                {
+                    "date": "2025-05-01",
+                    "teachingFaculty": "Pradeep Kumar Mallick (Coordinator)",
+                    "nonTeachingFaculty": "Dushashan  Swain"
+                },
+                {
+                    "date": "2025-05-02",
+                    "teachingFaculty": "Suman  Sarkar (Coordinator)",
+                    "nonTeachingFaculty": "Ramesh Chandra Dhal"
+                },
+                {
+                    "date": "2025-05-03",
+                    "teachingFaculty": "Sudhansu Shekhar Dalai (Coordinator)",
+                    "nonTeachingFaculty": "Pradipta Kumar Sahoo"
+                },
+                {
+                    "date": "2025-05-04",
+                    "teachingFaculty": "Purnendu Kumar Mohapatra (Coordinator)",
+                    "nonTeachingFaculty": "Ranjan Kumar Sethi"
+                },
+                {
+                    "date": "2025-05-05",
+                    "teachingFaculty": "Nishikanta  Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Narayan  Samanta"
+                },
+                {
+                    "date": "2025-05-06",
+                    "teachingFaculty": "Deepak  Singhal (Coordinator)",
+                    "nonTeachingFaculty": "Santosh  Behera"
+                },
+                {
+                    "date": "2025-05-07",
+                    "teachingFaculty": "Pradip  Dhal (Coordinator)",
+                    "nonTeachingFaculty": "Rajeeb Kumar Jena"
+                },
+                {
+                    "date": "2025-05-08",
+                    "teachingFaculty": "Arnav  Pati (Coordinator)",
+                    "nonTeachingFaculty": "Shibaji  Nayak"
+                },
+                {
+                    "date": "2025-05-09",
+                    "teachingFaculty": "P.  Chandrasekhar  (Coordinator)",
+                    "nonTeachingFaculty": "Ramakanta  Behera"
+                },
+                {
+                    "date": "2025-05-10",
+                    "teachingFaculty": "Subrat  Kumar (Coordinator)",
+                    "nonTeachingFaculty": "Krushna Ch. Tripathy"
+                },
+                {
+                    "date": "2025-05-11",
+                    "teachingFaculty": "Vikram  Kumar (Coordinator)",
+                    "nonTeachingFaculty": "Manoj Kumar Senapati"
+                },
+                {
+                    "date": "2025-05-12",
+                    "teachingFaculty": "Abinas  Panda (Coordinator)",
+                    "nonTeachingFaculty": "Umakanta  Sahoo"
+                },
+                {
+                    "date": "2025-05-13",
+                    "teachingFaculty": "Rudra Narayan Senapati (Coordinator)",
+                    "nonTeachingFaculty": "Rajib Ranjan Sahu"
+                },
+                {
+                    "date": "2025-05-14",
+                    "teachingFaculty": "Rupesh Chandra Panda (Coordinator)",
+                    "nonTeachingFaculty": "Somanath  Mohanty"
+                },
+                {
+                    "date": "2025-05-15",
+                    "teachingFaculty": "Sujit Sangram Sahoo (Coordinator)",
+                    "nonTeachingFaculty": "Upendra Kumar Samal"
+                },
+                {
+                    "date": "2025-05-16",
+                    "teachingFaculty": "Israj  Ali (Coordinator)",
+                    "nonTeachingFaculty": "Deepak Kumar Behera"
+                },
+                {
+                    "date": "2025-05-17",
+                    "teachingFaculty": "Jayant Kumar Naik (Coordinator)",
+                    "nonTeachingFaculty": "Panchanan  Sahoo"
+                },
+                {
+                    "date": "2025-05-18",
+                    "teachingFaculty": "Manas Chandan Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Kabiraj  Nayak"
+                },
+                {
+                    "date": "2025-05-19",
+                    "teachingFaculty": "Nikhilanand  Arya (Coordinator)",
+                    "nonTeachingFaculty": "Sudhansu Ranjan Behera"
+                },
+                {
+                    "date": "2025-05-20",
+                    "teachingFaculty": "Rakesh  Roashan (Coordinator)",
+                    "nonTeachingFaculty": "Subrat Kumar Biswal"
+                },
+                {
+                    "date": "2025-05-21",
+                    "teachingFaculty": "Krushna Chandra Patra (Coordinator)",
+                    "nonTeachingFaculty": "Sibaprasad  Dash"
+                },
+                {
+                    "date": "2025-05-22",
+                    "teachingFaculty": "Rakesh Kumar Rai (Coordinator)",
+                    "nonTeachingFaculty": "Mohammed  Hanzalah"
+                },
+                {
+                    "date": "2025-05-23",
+                    "teachingFaculty": "Harish Kumar Patnaik (Coordinator)",
+                    "nonTeachingFaculty": "Subhakant  Dash"
+                },
+                {
+                    "date": "2025-05-24",
+                    "teachingFaculty": "Rishi Kumar Khanna (Coordinator)",
+                    "nonTeachingFaculty": "Satyaban  Prusty"
+                },
+                {
+                    "date": "2025-05-25",
+                    "teachingFaculty": "Tushar Kanta Mahapatra (Coordinator)",
+                    "nonTeachingFaculty": "Ranajit  Rout"
+                },
+                {
+                    "date": "2025-05-26",
+                    "teachingFaculty": "Ambika Prasad Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Shirsa Shovan Jena"
+                },
+                {
+                    "date": "2025-05-27",
+                    "teachingFaculty": "Soumya  Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Ramesh Kumar Panda"
+                },
+                {
+                    "date": "2025-05-28",
+                    "teachingFaculty": "Abhishek  Raj (Coordinator)",
+                    "nonTeachingFaculty": "Ashis Kumar Palai"
+                },
+                {
+                    "date": "2025-05-29",
+                    "teachingFaculty": "Vijay Kumar Meena (Coordinator)",
+                    "nonTeachingFaculty": "Nikhilesh Kumar Panda"
+                },
+                {
+                    "date": "2025-05-30",
+                    "teachingFaculty": "Sashikanta  Khuntia (Coordinator)",
+                    "nonTeachingFaculty": "Bishnu Charan Sahoo"
+                },
+                {
+                    "date": "2025-05-31",
+                    "teachingFaculty": "Satish Kumar Gannamaneni (Coordinator)",
+                    "nonTeachingFaculty": "Patitapaban  Behera"
+                }
+            ]
+        },
+        {
+            "hostelName": "Hostel 4",
+            "duties": [
+                {
+                    "date": "2025-05-01",
+                    "teachingFaculty": "Subhra  Debdas (Coordinator)",
+                    "nonTeachingFaculty": "Lolup Lochan Das"
+                },
+                {
+                    "date": "2025-05-02",
+                    "teachingFaculty": "Arijit  Patra (Coordinator)",
+                    "nonTeachingFaculty": "Amulya  Tripathy"
+                },
+                {
+                    "date": "2025-05-03",
+                    "teachingFaculty": "Satya Subha Shree Sen (Coordinator)",
+                    "nonTeachingFaculty": "Soubhagya  Rout"
+                },
+                {
+                    "date": "2025-05-04",
+                    "teachingFaculty": "Deepak Kumar Patra (Coordinator)",
+                    "nonTeachingFaculty": "Kamal Kumar Ojha"
+                },
+                {
+                    "date": "2025-05-05",
+                    "teachingFaculty": "Mojahedul Islam Nayyer (Coordinator)",
+                    "nonTeachingFaculty": "Amitabha  Nayak"
+                },
+                {
+                    "date": "2025-05-06",
+                    "teachingFaculty": "H.S.  Ganesha (Coordinator)",
+                    "nonTeachingFaculty": "Bigyan Kumar Nayak"
+                },
+                {
+                    "date": "2025-05-07",
+                    "teachingFaculty": "Biswajit  Pattnaik (Coordinator)",
+                    "nonTeachingFaculty": "Ajaya Kumar Sahoo"
+                },
+                {
+                    "date": "2025-05-08",
+                    "teachingFaculty": "Basudeb  Dutta (Coordinator)",
+                    "nonTeachingFaculty": "Umakanta  Nayak"
+                },
+                {
+                    "date": "2025-05-09",
+                    "teachingFaculty": "Rabi Sankar Pattanaik (Coordinator)",
+                    "nonTeachingFaculty": "Satyabrata  Parida"
+                },
+                {
+                    "date": "2025-05-10",
+                    "teachingFaculty": "Gangadhara  Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Khokan Kumar Das"
+                },
+                {
+                    "date": "2025-05-11",
+                    "teachingFaculty": "Giridhari  Muduli (Coordinator)",
+                    "nonTeachingFaculty": "Prasanta Kumar Pradhan"
+                },
+                {
+                    "date": "2025-05-12",
+                    "teachingFaculty": "Ajit Kumar Sahoo (Coordinator)",
+                    "nonTeachingFaculty": "Uma Sankar Behera"
+                },
+                {
+                    "date": "2025-05-13",
+                    "teachingFaculty": "Basanta Kumar Nanda (Coordinator)",
+                    "nonTeachingFaculty": "Anil Kumar Rout"
+                },
+                {
+                    "date": "2025-05-14",
+                    "teachingFaculty": "Dillip Kumar Barik (Coordinator)",
+                    "nonTeachingFaculty": "Abhinandan  Sahu"
+                },
+                {
+                    "date": "2025-05-15",
+                    "teachingFaculty": "Satkar  Tripathi (Coordinator)",
+                    "nonTeachingFaculty": "Sadasiba  Samantaray"
+                },
+                {
+                    "date": "2025-05-16",
+                    "teachingFaculty": "Debdulal  Panda (Coordinator)",
+                    "nonTeachingFaculty": "Kailash Chandra Sahu"
+                },
+                {
+                    "date": "2025-05-17",
+                    "teachingFaculty": "Rana  Chattaraj (Coordinator)",
+                    "nonTeachingFaculty": "Bijay Kumar Panda"
+                },
+                {
+                    "date": "2025-05-18",
+                    "teachingFaculty": "Saurabh  Jha (Coordinator)",
+                    "nonTeachingFaculty": "Sukanta  Behura"
+                },
+                {
+                    "date": "2025-05-19",
+                    "teachingFaculty": "Manas Ranjan Nayak (Coordinator)",
+                    "nonTeachingFaculty": "Bibhu Prasad Nanda"
+                },
+                {
+                    "date": "2025-05-20",
+                    "teachingFaculty": "K.V.V.S.R  Chowdary (Coordinator)",
+                    "nonTeachingFaculty": "Abhaya Kumar Mohanty"
+                },
+                {
+                    "date": "2025-05-21",
+                    "teachingFaculty": "Satya Narayan Mishra (Coordinator)",
+                    "nonTeachingFaculty": "Jyotiranjan  Sahoo"
+                },
+                {
+                    "date": "2025-05-22",
+                    "teachingFaculty": "Chinmaya  Misra  (Coordinator)",
+                    "nonTeachingFaculty": "Roshan Kumar Thakur"
+                },
+                {
+                    "date": "2025-05-23",
+                    "teachingFaculty": "Srinivas  Ramavath (Coordinator)",
+                    "nonTeachingFaculty": "Sujeet  Thakur"
+                },
+                {
+                    "date": "2025-05-24",
+                    "teachingFaculty": "Ramanuj  Kumar (Coordinator)",
+                    "nonTeachingFaculty": "Amulya Kumar Mishra"
+                },
+                {
+                    "date": "2025-05-25",
+                    "teachingFaculty": "Prasenjit  Maiti (Coordinator)",
+                    "nonTeachingFaculty": "Aswini Ku. Pati"
+                },
+                {
+                    "date": "2025-05-26",
+                    "teachingFaculty": "Nayan Kumar Subhashis Behera (Coordinator)",
+                    "nonTeachingFaculty": "Sambhunath  Sahu"
+                },
+                {
+                    "date": "2025-05-27",
+                    "teachingFaculty": "Hrushikesh  Nayak (Coordinator)",
+                    "nonTeachingFaculty": "Bishwajit  Swain"
+                },
+                {
+                    "date": "2025-05-28",
+                    "teachingFaculty": "Subhadip  Pramanik (Coordinator)",
+                    "nonTeachingFaculty": "Siba Prasad Mohanty"
+                },
+                {
+                    "date": "2025-05-29",
+                    "teachingFaculty": "Sudhansu Shekhar Patra (Coordinator)",
+                    "nonTeachingFaculty": "Sanjay Kumar Hazra"
+                },
+                {
+                    "date": "2025-05-30",
+                    "teachingFaculty": "Saptarshi  Das (Coordinator)",
+                    "nonTeachingFaculty": "Manjit  Purohit"
+                },
+                {
+                    "date": "2025-05-31",
+                    "teachingFaculty": "Anil Kumar Rout (Coordinator)",
+                    "nonTeachingFaculty": "Haraprasad  Rath"
+                }
+            ]
+        }
+    ]
+}
