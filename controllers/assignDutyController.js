@@ -8,8 +8,8 @@ const stream = require('stream');
 const assignDuties = async (req, res) => {
     try {
         const { startDate, endDate, hostelType } = req.body;
-        const start = moment(startDate).startOf('day');
-        const end = moment(endDate).startOf('day');
+        const start = moment(startDate,'YYYY-MM-DD').startOf('day');
+        const end = moment(endDate,'YYYY-MM-DD').startOf('day');
 
         if (!start.isValid() || !end.isValid() || start.isAfter(end)) {
             return res.status(400).json({ message: 'Invalid date range' });
@@ -26,7 +26,7 @@ const assignDuties = async (req, res) => {
             gender = 'MALE';
         } else {
             for (let i = 1; i <= girlsHostel; i++) hostels.push(`Group ${i}`);
-        }
+        }   
 
         const totalDays = end.diff(start, 'days') + 1;
         const faculties = await Faculty.find({ onLeave: false, gender }).lean();
