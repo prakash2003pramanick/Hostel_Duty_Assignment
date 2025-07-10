@@ -7,9 +7,10 @@ const stream = require('stream');
 
 const assignDuties = async (req, res) => {
     try {
+        console.log("Assigning duty");
         const { startDate, endDate, hostelType } = req.body;
-        const start = moment(startDate,'YYYY-MM-DD').startOf('day');
-        const end = moment(endDate,'YYYY-MM-DD').startOf('day');
+        const start = moment(startDate, 'YYYY-MM-DD').startOf('day');
+        const end = moment(endDate, 'YYYY-MM-DD').startOf('day');
 
         if (!start.isValid() || !end.isValid() || start.isAfter(end)) {
             return res.status(400).json({ message: 'Invalid date range' });
@@ -26,12 +27,18 @@ const assignDuties = async (req, res) => {
             gender = 'MALE';
         } else {
             for (let i = 1; i <= girlsHostel; i++) hostels.push(`Group ${i}`);
-        }   
+        }
+        console.log(`Hostels: ${hostels.join(', ')}`);
 
         const totalDays = end.diff(start, 'days') + 1;
-        const faculties = await Faculty.find({ onLeave: false, gender }).lean();
+        const faculties = await Faculty.find({
+            gender: { $regex: `^${gender}$`, $options: 'i' }  // case-insensitive match
+        }).lean();
         const teachingFaculties = faculties.filter(f => f.type === 'Teaching');
         const nonTeachingFaculties = faculties.filter(f => f.type === 'Non-Teaching');
+
+        console.log(`Total faculties found: ${faculties.length}`);
+        console.log(`Teaching faculties: ${teachingFaculties.length}, Non-Teaching faculties: ${nonTeachingFaculties.length}`);
 
         if (teachingFaculties.length === 0 || nonTeachingFaculties.length === 0) {
             return res.status(400).json({ message: 'Not enough faculty available for assignment' });
@@ -42,9 +49,11 @@ const assignDuties = async (req, res) => {
             const bDate = b.lastDuty?.length ? new Date(b.lastDuty[b.lastDuty.length - 1].date) : new Date(0);
             return aDate - bDate;
         });
+        console.log(`Sorting faculties by last duty date...`);
 
         const teachingQueue = sortByLastDuty(teachingFaculties);
         const nonTeachingQueue = sortByLastDuty(nonTeachingFaculties);
+        console.log(`Total Teaching Faculty: ${teachingQueue.length}, Total Non-Teaching Faculty: ${nonTeachingQueue.length}`);
 
         const dutyMap = {}; // { 'YYYY-MM': [assignments] }
 
@@ -84,6 +93,7 @@ const assignDuties = async (req, res) => {
                 nonTeachingQueue.push(nonTeaching);
             }
         }
+        console.log(`Duty assignments created for ${Object.keys(dutyMap).length} months`);
 
         const bulkOperations = [...teachingQueue, ...nonTeachingQueue].map(f => ({
             updateOne: {
@@ -94,6 +104,7 @@ const assignDuties = async (req, res) => {
         if (bulkOperations.length > 0) await Faculty.bulkWrite(bulkOperations);
 
         const monthKeys = Object.keys(dutyMap);
+        console.log(`Duty assignments created for ${monthKeys.length} months`);
         if (monthKeys.length === 1) {
             const [monthYear] = monthKeys;
             const [year, month] = monthYear.split('-');
