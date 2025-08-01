@@ -1,27 +1,30 @@
+// models/faculty.js
 const mongoose = require('mongoose');
 
-const FacultySchema = new mongoose.Schema({
-  empCode: { type: String, unique: true },
+const facultySchema = new mongoose.Schema({
+  employeeCode: { type: String, required: true, unique: true },
   title: String,
   name: String,
   designation: String,
-  department: String,
-  emailId: String,
-  mobNo: String,
-  gender: { type: String, default: "MALE", enum: ["MALE", "FEMALE"] },
+  orgUnit: String,
+  employeeGroup: String,
+  gender: String,
+  personalEmail: String,
+  officialEmail: String,
+  mobile: String,
   lastDuty: [
     {
       date: Date,
-      group: String,
+      hostel: String,
+      roomAlloted: String,
+      numberOfRooms: Number,
     }
   ],
-  leave: {
+  leave: [{
     startDate: { type: Date },
     endDate: { type: Date },
     reason: { type: String }
-  },
-  type: { type: String, enum: ['Teaching', 'Non-Teaching', 'Staff'], default: 'Teaching' },
-  onLeave: { type: Boolean, default: false },
-});
+  }]
+}, { timestamps: true });
 
-module.exports = mongoose.model('Faculty', FacultySchema);
+module.exports = mongoose.model('Faculty', facultySchema);

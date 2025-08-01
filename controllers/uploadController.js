@@ -81,14 +81,14 @@ const addEmployeesFromExcel = async (req, res) => {
 
         res.download(outputPath, err => {
             // Clean up both uploaded and output files after response
-            fs.unlink(filePath, () => {});
-            fs.unlink(outputPath, () => {});
+            fs.unlink(filePath, () => { });
+            fs.unlink(outputPath, () => { });
             if (err) console.error('Error sending file:', err);
         });
     } catch (err) {
         console.error(err);
         // Cleanup uploaded file even on error
-        fs.unlink(filePath, () => {});
+        fs.unlink(filePath, () => { });
         res.status(500).json({ message: "Bulk operation failed", error: err.message });
     }
 };

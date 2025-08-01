@@ -6,6 +6,8 @@ const { addEmployeesFromExcel } = require("../controllers/uploadController");
 const { assignDuties } = require("../controllers/assignDutyController");
 const { generateFacultyDutyReport, generateFacultyDutyFrequency } = require("../controllers/dutyReport");
 const { updateSettings, getSettings } = require("../controllers/updateSettings");
+const { updateHostel } = require("../controllers/hostelController");
+const { updateFaculty } = require("../controllers/facultyController");
 
 // Example controller
 router.post("/upload/add_employee", upload.single("excelFile"), addEmployeesFromExcel);
@@ -14,23 +16,7 @@ router.post("/duty/frequency", generateFacultyDutyFrequency);
 router.get("/duty/report/:empCode", generateFacultyDutyReport);
 router.put("/settings", updateSettings);
 router.get("/settings", getSettings);
-
-
-// router.post("/upload/delete_employee", upload.single("excelFile"), (req, res) => {
-//   if (!req.file) return res.status(400).json({ message: "No file uploaded" });
-
-//   res.status(200).json({
-//     message: "File uploaded successfully",
-//     filePath: req.file.path,
-//   });
-// });
-// router.post("/upload/on_leave", upload.single("excelFile"), (req, res) => {
-//   if (!req.file) return res.status(400).json({ message: "No file uploaded" });
-
-//   res.status(200).json({
-//     message: "File uploaded successfully",
-//     filePath: req.file.path,
-//   });
-// });
+router.post("/upload/hostel", upload.single("hostelFile"), updateHostel);
+router.post("/upload/faculty", upload.single("facultyFile"), updateFaculty);
 
 module.exports = router;
