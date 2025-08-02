@@ -526,7 +526,6 @@ const assignDutiesManually = async (req, res) => {
     }
 };
 
-
 // Util: parse "1-20" → 20 rooms
 function calculateRoomCount(range) {
     const [start, end] = range.split("-").map(Number);
