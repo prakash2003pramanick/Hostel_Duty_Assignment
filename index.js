@@ -24,7 +24,9 @@ if (!fs.existsSync("outputs")) {
 app.use(express.json());
 app.use("/api", uploadRoute);
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI, {
+  serverSelectionTimeoutMS: 30000,
+})
   .then(() => console.log('MongoDB connected ✅'))
   .catch(err => console.error('MongoDB error:', err));
 

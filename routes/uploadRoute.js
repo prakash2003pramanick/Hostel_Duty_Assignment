@@ -3,15 +3,18 @@ const express = require("express");
 const router = express.Router();
 const upload = require("../utils/upload");
 const { addEmployeesFromExcel } = require("../controllers/uploadController");
-const { assignDuties } = require("../controllers/assignDutyController");
+const { assignDuties, assignDutiesManually } = require("../controllers/assignDutyController");
 const { generateFacultyDutyReport, generateFacultyDutyFrequency } = require("../controllers/dutyReport");
 const { updateSettings, getSettings } = require("../controllers/updateSettings");
 const { updateHostel } = require("../controllers/hostelController");
 const { updateFaculty } = require("../controllers/facultyController");
+const { addOrUpdateHostelManually } = require("../controllers/addOrUpdateHostelController");
 
 // Example controller
+router.post("/hoste/add-or-update-manually", addOrUpdateHostelManually);
 router.post("/upload/add_employee", upload.single("excelFile"), addEmployeesFromExcel);
 router.post("/duty/assign_duty", assignDuties);
+router.post("/duty/assign_duty_manually", assignDutiesManually);
 router.post("/duty/frequency", generateFacultyDutyFrequency);
 router.get("/duty/report/:empCode", generateFacultyDutyReport);
 router.put("/settings", updateSettings);

@@ -18,6 +18,6 @@ const DutySchema = new mongoose.Schema({
     }
 }, { timestamps: true });
 
-DutySchema.index({ school: 1, date: 1, hostel: 1 }, { unique: true });
+// DutySchema.index({ school: 1, date: 1, hostel: 1 }, { unique: true });
 
 module.exports = mongoose.model('DutyAssignment', DutySchema);

@@ -12,14 +12,14 @@ const facultySchema = new mongoose.Schema({
   personalEmail: String,
   officialEmail: String,
   mobile: String,
-  lastDuty: [
-    {
-      date: Date,
-      hostel: String,
-      roomAlloted: String,
-      numberOfRooms: Number,
-    }
-  ],
+  lastDuty:
+  {
+    date: Date,
+    hostel: String,
+    roomAlloted: String,
+    numberOfRooms: Number,
+  }
+  ,
   leave: [{
     startDate: { type: Date },
     endDate: { type: Date },

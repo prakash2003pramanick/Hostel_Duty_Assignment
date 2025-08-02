@@ -15,10 +15,8 @@ const HostelSchema = new mongoose.Schema({
         type: Number,
         required: [true, 'Number of rooms is required']
     },
-    associatedSchools: [{
-        year: String,
-        school: String
-    }],
+    associatedSchools: [String],
+    nonAssociatedSchools: [String],
     type: {
         type: String,
         enum: ['BOYS', 'GIRLS'],

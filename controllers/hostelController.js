@@ -1,35 +1,73 @@
 const xlsx = require('xlsx');
 const Hostel = require('../models/hostel');
-
-function normalizeHostelName(rawName) {
+function normalizeKPHostelName(rawName) {
     const parts = rawName.trim().split('-');
-    if (parts.length < 2) throw new Error(`Invalid hostel name format in "${rawName}"`);
+    if (parts.length < 2) throw new Error(`Invalid KP hostel format in "${rawName}"`);
 
-    const prefix = parts[0].toUpperCase(); // KP, QC, etc.
-    let blockPart = parts[1].toUpperCase().replace(/\s+/g, ' ').trim(); // Normalize whitespace
+    const prefix = parts[0].toUpperCase();
+    let blockPart = parts[1].toUpperCase().replace(/\s+/g, ' ').trim();
 
-    // Try direct split (space present)
     let [roman, suffix] = blockPart.split(' ');
-
     if (!suffix && parts.length === 5) suffix = parts[2];
-    let number = romanToInt(roman);
 
+    let number = romanToInt(roman);
     if (!isNaN(number)) {
         return suffix ? `${prefix}-${number}${suffix}` : `${prefix}-${number}`;
     }
 
-    // If no space or failed to convert, try to peel suffix
     for (let i = 1; i <= 2; i++) {
         roman = blockPart.slice(0, -i);
         suffix = blockPart.slice(-i);
-
         number = romanToInt(roman);
         if (!isNaN(number)) {
             return `${prefix}-${number}${suffix}`;
         }
     }
 
-    throw new Error(`Failed to normalize hostel name "${rawName}"`);
+    throw new Error(`Failed to normalize KP hostel name "${rawName}"`);
+}
+// function normalizeQCHostelName(rawName) {
+//     // Remove commas and extra spaces
+//     rawName = rawName.replace(/,/g, '').replace(/\s+/g, ' ').trim();
+
+//     const match = rawName.match(/^(QC[- ]?\d+[ A-Z]*|HOUSE - [A-Z])\s*,?\s*CAMPUS\s*-\s*\d+/i);
+//     if (!match) throw new Error(`Invalid QC hostel format: "${rawName}"`);
+
+//     const namePart = rawName.split(',')[0].trim();
+
+//     // Normalize QC prefix spacing (e.g., "QC 6 G.H (A)" -> "QC-6 G.H (A)")
+//     if (namePart.startsWith('QC')) {
+//         return namePart.replace(/^QC\s*/, 'QC-').replace(/\s+/g, ' ').trim();
+//     }
+
+//     return namePart; // HOUSE-style, e.g., "HOUSE - G"
+// }
+
+function normalizeQCHostelName(rawName) {
+    const [prefixPart, rest] = rawName.split('-');
+    const prefix = prefixPart.trim().toUpperCase(); // e.g., QC or HOUSE
+
+    if (!rest) throw new Error(`Invalid QC/HOUSE format: "${rawName}"`);
+
+    // Split by comma: [ "6 G.H (A)", " CAMPUS -11" ]
+    const [blockPartRaw] = rest.split(',');
+    const blockPart = blockPartRaw.replace(/\s+/g, '').toUpperCase(); // remove all spaces
+
+    return `${prefix}-${blockPart}`;
+}
+
+function normalizeHostelName(rawName) {
+    rawName = rawName.trim();
+
+    if (rawName.toUpperCase().startsWith('KP-')) {
+        return normalizeKPHostelName(rawName);
+    }
+
+    if (rawName.toUpperCase().startsWith('QC') || rawName.toUpperCase().startsWith('HOUSE')) {
+        return rawName;
+    }
+
+    throw new Error(`Unsupported hostel name format: "${rawName}"`);
 }
 
 // Helper
